@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceitos Básicos HTML - RocketSeat</title>
+</head>
+<body>
+    <!-- Isto é um comentário com HTML -->
+
+    <!--
+        Anatomia das tags
+
+        - Abertura de tag
+        - Fechamento de tag
+        - Conteudo
+        - Elementos
+    -->
+    <h1>Titulo</h1>
+
+    <!-- Elementos vazios -->
+    <img src="" alt="">
+    <input type="text" placeholder="insira aqui algo">
+
+    <h2>Atributos HTML</h2> <hr>
+    <!--
+
+        Atributos
+
+        - Informações extra
+        - Configurações
+
+    -->
+    <img src="https://sportshub.cbsistatic.com/i/2022/12/14/67b7aef2-54ea-4a43-9888-457496341438/my-hero-dabi.jpg" alt="dabi" width="350px" tabindex="1" title="Dabi"> 
+    <input type="text" disabled placeholder="desabilitado">
+
+    <!--
+        Aspas 
+
+        - omissão
+        - simples
+        - duplas
+
+        * Sempre preferir duplas!
+    -->
+
+    <!--
+        Atributos globais mais utilizados
+
+        - class;
+        - contenteditable;
+        - data-*;
+        - hidden;
+        - id;
+        - style;
+        - tabindex;
+        - title
+    -->
+
+    <div class="conteudo" contenteditable="true" tabindex="2" title="Clique para editar">
+        você pode editar aqui
+    </div>
+
+    <!--
+        data é muito usado no JS
+    -->
+    <div class="conteudo" data-qualquer-coisa-aqui="" style="color: blue; " id="divColorida" tabindex="3" > 
+        você não pode editar aqui
+    </div>
+
+    <div class="conteudo" hidden>
+        você não pode editar aqui
+    </div>
+
+    <!--
+        Aninhamento de tags
+
+        - Fluxo;
+        - Hierarquia;
+        - Posicionamento dos elementos;
+    -->
+
+    <h2>Aninhamento de tags</h2><hr>
+    <p>
+        <em>Dabi (荼毘だび?)</em>, cujo a verdadeira identidade é a de <strong>Todoroki (轟とどろき 燈とう矢や Todoroki Tōya?)</strong>, é um vilão Rank-B, membro da <em>Liga dos Vilões</em> e líder do Esquadrão de Ação da Vanguarda. É um dos principais antagonistas coadjuvantes de My Hero Academia. <br>
+    </p>
+
+    <p>
+        Também é o filho mais velho de Enji Todoroki (também conhecido pela identidade heróica de Endeavor) e o irmão mais velho de Shoto.
+    </p>
+
+    <a href="https://myheroacademia.fandom.com/pt-br/wiki/Dabi">Saiba Mais</a>
+
+</body>
+</html>
