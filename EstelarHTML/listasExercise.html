@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove tarefas</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .tarefas{
+            padding: 8px;
+            background-color: black;
+            color: red;
+            cursor: pointer;
+            transform: .4s ease-in-out;
+            margin-bottom: 30px !important;
+        }
+
+        .tarefas::hover{
+            background-color: red;
+            color: black;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div>
+        <label>Adicione uma tarefa a fazer</label>
+        <input type="text" placeholder="tarefa" id="tarefa">
+
+        <input type="button" onclick="adicionaTarefa()" value="Adicionar">
+
+        <div id="res">
+
+        </div>
+
+    </div>
+
+    <script>
+
+        function adicionaTarefa(){
+            let valorTarefa = document.getElementById("tarefa").value;
+            let res = document.getElementById("res");
+            let tarefaCriar = document.createElement("span");
+
+            res.appendChild(tarefaCriar);
+            tarefaCriar.setAttribute("class", "tarefas");
+
+            tarefaCriar.innerHTML = `${valorTarefa} <br>`;
+
+        }
+
+    </script>
+
+</body>
+</html>
