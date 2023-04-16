@@ -1,0 +1,10 @@
+° 2 arquivos html = index e contact
+° 1 diretório de nome 'files'
+    - com duas imagens e 1 html para mostrá-las
+
+Dentro de cada arquivos
+
+° nav menu com uma lista não ordenada
+° Título da página
+° Um ou mais parágrafos com info da página
+
