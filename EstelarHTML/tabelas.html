@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas no html</title>
+</head>
+<body>
+    <h1>Tabelas</h1>
+
+    <table id="tabela">
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+        </tr>
+
+        <tr>
+            <td>Daniel</td>
+            <td>19</td>
+        </tr>
+
+    </table>
+
+    <label for="pessoaNome">Nome:</label>
+    <input type="text" id="pessoaNome">
+    <br>
+    <label for="pessoaIdade"Idade>Idade:</label>
+    <input type="number" id="pessoaIdade">
+    <button onclick="adicionarPessoa()">Colocar</button>
+
+    <h2>Tabela Organizada</h2>
+    <hr>
+
+    <table>
+
+        <caption>Pessoas por Idade</caption>
+
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>Daniel</td>
+                <td>19</td>
+            </tr>
+
+            <tr>
+                <td>Goku</td>
+                <td>42</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Total: </td>
+                <td>2 pessoas</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <script>
+        function adicionarPessoa(){
+        
+            let newName = document.getElementById("pessoaNome");
+            let newIdade = document.getElementById("pessoaIdade");
+            let tabela = document.getElementById("tabela");
+            
+            let res = `
+                        <tr>
+                            <th>Nome</th>
+                            <th>Idade</th>
+                        </tr>
+
+                        <tr>
+                            <td>${newName.value}</td>
+                            <td>${newIdade.value}</td>
+                        </tr>`;
+
+            tabela.innerHTML = res;
+        }
+    </script>
+
+</body>
+</html>
